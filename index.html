@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kawaii Winter Wonderland ❄️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <header>
+      <h1>Kawaii Winter Wonderland ❄️</h1>
+      <div class="seasonal-effect" id="seasonalEffect"></div>
+    </header>
+
+    <main>
+      <div class="inventory">
+        <h2>Inventory 👜</h2>
+        <ul id="inventoryList"></ul>
+      </div>
+
+      <div class="items-container" id="itemsContainer"></div>
+
+      <button id="collectBtn" class="collect-btn">Collect Random Item ✨</button>
+    </main>
+
+    <!-- Snow layers for parallax -->
+    <div class="snow-layer layer1"></div>
+    <div class="snow-layer layer2"></div>
+    <div class="snow-layer layer3"></div>
+  </div>
+
+  <!-- Audio -->
+  <audio id="winterMusic" loop autoplay>
+    <source src="sounds/winter-ambient.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="windSound" loop autoplay>
+    <source src="sounds/wind.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="chimeSound">
+    <source src="sounds/chime.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="game.js"></script>
+</body>
+</html>
